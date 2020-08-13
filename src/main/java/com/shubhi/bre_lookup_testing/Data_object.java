@@ -66,5 +66,15 @@ public class Data_object implements java.io.Serializable {
 	public void setNpd_attr_2(long npd_attr_2) {
 		this.npd_attr_2 = npd_attr_2;
 	}
-
+    
+    public long breLookup(java.lang.String lkp_str, int index)
+    {
+        int i = this.lkp_list.indexOf(lkp_str);
+        
+       String[] str_list = this.lkp_list.get(i).split(";", 3);
+       
+       String[] output_list = str_list[2].split(",");
+       
+       return Long.parseLong(output_list[index]);
+    }
 }
