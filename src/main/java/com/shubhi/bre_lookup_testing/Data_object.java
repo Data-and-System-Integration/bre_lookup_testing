@@ -70,13 +70,13 @@ public class Data_object implements java.io.Serializable {
     public long breLookup( int index,java.lang.String lookup_name,long... lkp_args)
     {
         
-        String lkp_str = "transaction-100000";
+        String lkp_str = lookup_name;
         long output=0 ;
-       /* int j =0;
+        int j =0;
         for (long i : lkp_args) {
 			lkp_str = j==0?lkp_str + "-" + Long.toString(i):lkp_str + "," +  Long.toString(i);
 			j++;
-		}*/
+		}
 		for (String str :  this.lkp_list)
         //int i = this.lkp_list.indexOf("transaction-100000");
         {
