@@ -49,7 +49,7 @@
           <fieldValues>
             <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
               <field>npd_attr_1</field>
-              <value>o.breLookup(0,&quot;transaction&quot;,o.getTransaction_id(),o.getPpmonth())</value>
+              <value>o.breLookup(0,&quot;transaction&quot;,o.getTransaction_id())</value>
               <nature>3</nature>
               <type>Long</type>
             </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
