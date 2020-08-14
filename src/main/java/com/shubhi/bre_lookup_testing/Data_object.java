@@ -70,19 +70,26 @@ public class Data_object implements java.io.Serializable {
     public long breLookup( int index,java.lang.String lookup_name,long... lkp_args)
     {
         
-        /*String lkp_str = lookup_name;
-        int j =0;
+        String lkp_str = "transaction-100000";
+        long output=0 ;
+       /* int j =0;
         for (long i : lkp_args) {
 			lkp_str = j==0?lkp_str + "-" + Long.toString(i):lkp_str + "," +  Long.toString(i);
 			j++;
-		}
-        int i = this.lkp_list.indexOf("transaction-100000");
-        
-       String[] str_list = this.lkp_list.get(i).split("-");
+		}*/
+		for (String str :  this.lkp_list)
+        //int i = this.lkp_list.indexOf("transaction-100000");
+        {
+            if(str.contains( lkp_str ))
+            {
+               String[] str_list = str.split("-");
        
-       String[] output_list = str_list[2].split(",");
+                String[] output_list = str_list[2].split(","); 
+                output = Long.parseLong(output_list[index]);
+            }
+        }
        
-       return Long.parseLong(output_list[index]);*/
-       return 1;
+       
+       return output;
     }
 }
