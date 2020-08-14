@@ -73,12 +73,12 @@ public class Data_object implements java.io.Serializable {
         String lkp_str = lookup_name;
         int j =0;
         for (long i : lkp_args) {
-			lkp_str = j==0?lkp_str + ";" + Long.toString(i):lkp_str + "," +  Long.toString(i);
+			lkp_str = j==0?lkp_str + "-" + Long.toString(i):lkp_str + "," +  Long.toString(i);
 			j++;
 		}
-        int i = this.lkp_list.indexOf(lkp_str);
+        int i = this.lkp_list.indexOf("transaction-100000");
         
-       String[] str_list = this.lkp_list.get(i).split(";", 3);
+       String[] str_list = this.lkp_list.get(i).split("-");
        
        String[] output_list = str_list[2].split(",");
        
