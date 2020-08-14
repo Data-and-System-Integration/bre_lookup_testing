@@ -26,12 +26,12 @@
           <collectionFieldList>
             <field-data>
               <name>lkp_list</name>
-              <value>&quot;transaction;100000;1000&quot;</value>
+              <value>&quot;transaction-100000-1000&quot;</value>
               <nature>4</nature>
             </field-data>
             <field-data>
               <name>lkp_list</name>
-              <value>&quot;transaction;100001;2000&quot;</value>
+              <value>&quot;transaction-100001-2000&quot;</value>
               <nature>4</nature>
             </field-data>
           </collectionFieldList>
@@ -60,7 +60,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2020-08-13 20:44:56.799 UTC</lastRunResult>
+  <lastRunResult>2020-08-14 05:05:14.669 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.shubhi.bre_lookup_testing</packageName>
