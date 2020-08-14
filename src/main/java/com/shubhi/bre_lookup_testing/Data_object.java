@@ -70,7 +70,7 @@ public class Data_object implements java.io.Serializable {
     public long breLookup( int index,java.lang.String lookup_name,long... lkp_args)
     {
         
-        String lkp_str = lookup_name;
+        /*String lkp_str = lookup_name;
         int j =0;
         for (long i : lkp_args) {
 			lkp_str = j==0?lkp_str + "-" + Long.toString(i):lkp_str + "," +  Long.toString(i);
@@ -82,6 +82,7 @@ public class Data_object implements java.io.Serializable {
        
        String[] output_list = str_list[2].split(",");
        
-       return Long.parseLong(output_list[index]);
+       return Long.parseLong(output_list[index]);*/
+       return 1;
     }
 }
