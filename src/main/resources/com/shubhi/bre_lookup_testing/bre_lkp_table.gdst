@@ -49,7 +49,7 @@
           <fieldValues>
             <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
               <field>npd_attr_1</field>
-              <value>o.breLookup(0,&quot;transaction&quot;,o.getTransaction_id())</value>
+              <value>o.breLookup(0,&quot;transaction&quot;,o.transaction_id)</value>
               <nature>3</nature>
               <type>Long</type>
             </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
@@ -76,7 +76,7 @@
           <fieldValues>
             <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
               <field>npd_attr_2</field>
-              <value>o.breLookup(1,&quot;test_bre_lookup&quot;,o.getPpmonth(),o.getPpweek(),o.getTransaction_id())</value>
+              <value>o.breLookup(1,&quot;test_bre_lookup&quot;,o.ppmonth,o.ppweek,o.transaction_id)</value>
               <nature>3</nature>
               <type>Long</type>
             </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
